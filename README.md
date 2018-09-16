@@ -5,6 +5,18 @@ Adam Lu(刘亚壮)，高级软件架构师，Java编程专家，Spring、MySQL�
 QQ：2711098650
 
 # 项目简述
+本项目旨在可以为Apk打上系统签名  
+  
+本项目中的SignApk类是从Android的源码中复制出来的系统签名程序，在Android源码中的目录为：
+```
+build -> tools -> signapk：SignApk.java
+```
+完成签名还需要另外两个文件，分别叫platform.pk8和platform.x509.pem，在源码的以下路径可以找到：
+```
+build -> target -> product -> security
+```
+
+# 使用说明
 提供对Android Apk的签名操作，具体使用方式为：  
   
 1)将项目打包成Jar  
